@@ -48,4 +48,4 @@ jobs:
           cache: 'maven'
 
       - name: Executar tests d'integració
-        run: mvn clean verify
+        run: mvn clean verify -Dskip.unit.tests=true
